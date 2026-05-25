@@ -1,0 +1,167 @@
+/* GENERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* HEADER */
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+header h1{
+    margin-bottom: 10px;
+}
+
+/* NAVIGATION */
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    color: orange;
+}
+
+/* HAMBURGER */
+
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* SECTION */
+
+section{
+    background-color: white;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px lightgray;
+    text-align: center;
+}
+
+/* FLEXBOX */
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* IMAGE */
+
+img{
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+/* TEXT */
+
+.text{
+    max-width: 500px;
+}
+
+/* VIDEO */
+
+video{
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+footer a:hover{
+    color: orange;
+}
+
+/* TABLET */
+
+@media(max-width: 768px){
+
+    .content{
+        flex-direction: column;
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width: 600px){
+
+    .menu-icon{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .navbar{
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #menu-toggle:checked ~ .navbar{
+        display: flex;
+    }
+
+    section{
+        padding: 20px;
+    }
+
+    img{
+        width: 150px;
+    }
+
+}

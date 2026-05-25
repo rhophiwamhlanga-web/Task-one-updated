@@ -1,102 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Portfolio</title>
 
-    <style>
-
-        body{
-            margin: 0;
-            padding: 0;
-            font-family: Arial;
-            background-color: #f4f4f4;
-        }
-
-        header{
-            background-color: black;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        nav{
-            margin-top: 10px;
-        }
-
-        nav a{
-            color: white;
-            text-decoration: none;
-            margin: 15px;
-            font-size: 18px;
-        }
-
-        section{
-            padding: 40px;
-            text-align: center;
-        }
-
-        img{
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-
-        video{
-            margin-top: 20px;
-        }
-
-        footer{
-            background-color: black;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-        }
-
-        footer a{
-            color: white;
-            text-decoration: none;
-            margin: 10px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
+
     <header>
 
         <h1>Rhophiwa Mhlanga</h1>
 
-        <nav>
+
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-icon">
+            ☰
+        </label>
+
+
+        <nav class="navbar">
+
             <a href="#home">Home</a>
             <a href="#about">About Me</a>
-            <a href="#contact">Contact Us</a>
+            <a href="#contact">Contact Me</a>
+
         </nav>
 
     </header>
 
-    <!-- HOME SECTION -->
 
     <section id="home">
 
-        <img src="images/mwee.jpeg" width="200">
+        <div class="content">
 
-        <h2>Welcome To My Portfolio</h2>
+            <img src="mwee.jpeg" alt="Profile Picture">
 
-        <p>
-            I am astudent who enjoys coding,
-            animation, gaming and content creation.
-        </p>
+            <div class="text">
 
-        <video width="400" controls>
-            <source src="video/myv.mp4" type="video/mp4">
+                <h2>Welcome To My Portfolio</h2>
+
+                <p>
+                    I am a student who enjoys coding,
+                    animation, gaming and content creation.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <video controls>
+
+            <source src="myv.mp4" type="video/mp4">
+
         </video>
 
     </section>
 
-    <!-- ABOUT SECTION -->
 
     <section id="about">
 
@@ -118,7 +88,6 @@
 
     </section>
 
-    <!-- CONTACT SECTION -->
 
     <section id="contact">
 
@@ -132,11 +101,13 @@
 
     </section>
 
+
     <footer>
 
         <p>Phone: 0633300811</p>
 
         <a href="https://facebook.com">Facebook</a>
+
         <a href="https://instagram.com">Instagram</a>
 
     </footer>
